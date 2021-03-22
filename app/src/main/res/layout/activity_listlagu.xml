@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    tools:context=".Listlagu">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_lagu"
+        android:layout_width="299dp"
+        android:layout_height="606dp"
+        tools:listitem="@layout/row_lagu">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageView
+
+        android:id="@+id/imageView3"
+        android:layout_width="259dp"
+        android:layout_height="42dp"
+        android:layout_alignStart="@+id/rv_lagu"
+        android:layout_alignEnd="@+id/rv_lagu"
+        android:layout_alignBottom="@+id/rv_lagu"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="-29dp"
+        android:layout_marginBottom="553dp"
+        android:onClick="pindahlagu"
+        app:srcCompat="@drawable/play_button" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="259dp"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/rv_lagu"
+        android:layout_alignBottom="@+id/rv_lagu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="-7dp"
+        android:layout_marginBottom="472dp"
+        android:onClick="pindahlagu2"
+        app:srcCompat="@drawable/play_button" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="259dp"
+        android:layout_height="42dp"
+        android:layout_alignEnd="@+id/rv_lagu"
+        android:layout_alignBottom="@+id/rv_lagu"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="398dp"
+        android:onClick="pindahlagu"
+        app:srcCompat="@drawable/play_button" />
+
+
+</RelativeLayout>
